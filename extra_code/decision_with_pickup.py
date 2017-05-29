@@ -5,6 +5,8 @@ import numpy as np
 def decision_step(Rover):
 
     # Check if a rock is in sight
+    if Rover.picking_up:
+        return Rover
     if len(Rover.rock_angles) > 1:
         # Checks if the Rover is already in picking up range
         if Rover.near_sample:

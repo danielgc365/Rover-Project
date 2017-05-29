@@ -84,7 +84,7 @@ def perception_step(Rover):
     img_size = (img.shape[1], img.shape[0])
     dst_size = 5
     bottom_offset = 6
-    src = np.float32([[14, 140], [301 ,140],[200, 96], [118, 96]])
+    src = np.float32([[14, 140], [301, 140], [200, 96], [118, 96]])
     dst = np.float32([[img_size[0]/2 - dst_size, img_size[1] - bottom_offset],
                       [img_size[0]/2 + dst_size, img_size[1] - bottom_offset],
                       [img_size[0]/2 + dst_size, img_size[1] - 2*dst_size - bottom_offset],
