@@ -17,11 +17,10 @@ import pickle
 import matplotlib.image as mpimg
 import time
 import eventlet
-
-# Import functions for perception and decision making
 from perception import perception_step
 from decision import decision_step
 from supporting_functions import update_rover, create_output_images
+
 # Initialize socketio server and Flask application 
 # (learn more at: https://python-socketio.readthedocs.io/en/latest/)
 sio = socketio.Server()
@@ -64,10 +63,7 @@ class RoverState():
         # get creative in adding new fields or modifying these!
         self.stop_forward = 50 # Threshold to initiate stopping
         self.go_forward = 500 # Threshold to go forward again
-        self.stop_forward_rocks = 20
-        self.go_forward_rocks = 150
         self.max_vel = 2 # Maximum velocity (meters/second)
-        self.max_vel_rocks = 0.5
         self.rock_on_target = False #Checks if the sample is locked-on
         # Image output from perception step
         # Update this image to display your intermediate analysis steps

@@ -77,11 +77,8 @@ def perspect_transform(img, src, dst):
 
     return warped
 
-
-# Apply the above functions in succession and update the Rover state accordingly
 def perception_step(Rover):
     # Perform perception steps to update Rover()
-    # NOTE: camera image is coming to you in Rover.img
     # 1) Define source and destination points for perspective transform
     img = Rover.img
     img_size = (img.shape[1], img.shape[0])
