@@ -156,11 +156,6 @@ This function is called after the perception function, so the Rover already know
 
 This piece of code was placed before the Rover checks for navigable terrain, this is so the Rover gives priority to the rock samples.
 
-### Notes
-The simulator was ran on a resolution of 1280 x 720 with the graphics quality set to 'Fastest' This way the Rover managed to map most of the map with a high fidelity of around 60% - 70% the FPS reported by the terminal was in average 20.
-
-Also the code for picking up the rocks is located in the extra_code folder, because of a problem with the simulator the code is untested as it starts lagging after I pick the first rock so I am unable to continue. I tried several fixes that were explained in the slack channel but no luck.
-
 ### Todo:
 The Rover can be further improved in several ways, one of them would be for the Rover to return to its initial position after all the samples have been found. This can be donde as the Rover saves its x and y position so at the start that position can be saved to go back to it earlier.
 
